@@ -1,0 +1,1274 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: #F2F0E2;
+    --accent-color: #808c6c;
+    --base-color: #FAF8F1;
+    --highlight-color: #e3dfc8;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: YakuHanJP, "Noto Serif JP", serif;
+    font-size: 62.5%;
+    background: var(--base-color);
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 3rem;
+    color: #333;
+}
+
+h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+p {
+    font-size: 1rem;
+    color: #222;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1rem;
+}
+
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+dt {
+    font-size: 1rem;
+    color: #222;
+}
+
+dd {
+    font-size: 1rem;
+    color: #222;
+}
+
+img {
+    width: 100%;
+}
+
+input {
+    font-size: 1.2rem;
+}
+
+label {
+    font-size: 1.2rem;
+}
+
+/* ------------------ タグ --------------------- */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--main-color);
+    height: 7.5vh;
+}
+
+header h1 {
+    height: 80%;
+    margin-left: 2.5%;
+}
+
+.logo {
+    height: 100%;
+}
+
+.head_ul {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    margin-right: 2%;
+
+}
+
+.head_ul li {
+    margin: 0 1%;
+    padding: 2% 2%;
+    width: 3%;
+}
+
+/* ----------------------------- header ------------------------------ */
+
+.none_el {
+    display: none;
+}
+
+.camel {
+    background: #c49961;
+}
+
+.darkbrown {
+    background: #433309;
+}
+
+
+/* ============================ 全体設定 ============================== */
+
+
+.kv {
+    position: relative;
+    background: url("../img/kv.png") no-repeat;
+    height: 92.5vh;
+}
+
+.store-name {
+    position: absolute;
+    top: 7.5%;
+    left: 5%;
+    color: #ddd;
+    font-size: 8rem;
+}
+
+.store-infomation {
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    color: #ddd;
+    font-size: 3rem;
+}
+
+
+/* -------------------------------- kv --------------------------------- */
+.what_is h2 {
+    margin-left: 5%;
+    padding: 10vh 0 5vh;
+}
+
+.store_reference1 {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.what_is h3 {
+    margin-top: 5vh;
+    text-align: center;
+}
+
+.big_p {
+    font-size: 1.5rem;
+}
+
+.what_is p {
+    margin-top: 3vh;
+    text-align: center;
+}
+
+
+.store_reference2 {
+    display: block;
+    width: 60%;
+    margin: 15vh auto 0;
+}
+
+.what_is a {
+    display: block;
+    margin: 7.5vh 5vw 0 auto;
+    padding: 2.5vh 2.5vw;
+    text-align: end;
+    font-size: 1.75rem;
+}
+
+/* -------------------------------- what_is --------------------------------- */
+.new_news h2 {
+    text-align: center;
+    padding: 20vh 0 5vh;
+}
+
+.new_news li {
+    margin: 2.5% auto 0;
+    border-bottom: #333 1px solid;
+    height: 12.5vh;
+    width: 65%;
+}
+
+.news_link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.news_title {
+    font-size: 1.5rem;
+}
+
+.new_news div {
+    margin-left: 10%;
+}
+
+.news_list_link {
+    display: block;
+    margin: 7.5vh 5vw 0 auto;
+    padding: 2.5vh 2.5vw;
+    text-align: end;
+    font-size: 1.75rem;
+}
+
+/* -------------------------------- new_news --------------------------------- */
+.category h2 {
+    text-align: center;
+    padding: 20vh 0 5vh;
+}
+
+.category ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.category li {
+    width: 49.5%;
+    margin-bottom: 5%;
+}
+
+.category p {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.category div {
+    width: 70%;
+    padding-top: 70%;
+    border-radius: 100%;
+    margin: 0 auto;
+    border: 1px solid #555;
+}
+
+/* -------------------------------- category --------------------------------- */
+
+.upper_arrow {
+    margin: 10vh 5vw 5vh auto;
+    width: 5vw;
+    height: 5vw;
+    border: 1px dashed #888;
+    border-radius: 100%;
+    background: var(--base-color);
+}
+
+.upper_arrow img {
+    border-radius: 100%;
+}
+
+/* -------------------------------- upper_arrow --------------------------------- */
+
+footer {
+    background: var(--main-color);
+}
+
+footer a {
+    margin: 2% 0 1%;
+    padding: 1%;
+    font-size: 1.2rem;
+}
+
+.upper_footer a:nth-child(2n) {
+    padding-left: 0;
+}
+
+footer p {
+    margin: 2.5% 0 1.5%;
+    text-align: center;
+}
+
+.upper_footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 2%;
+    padding: 0 3% 2.5%;
+    border-bottom: 1px solid #444;
+}
+
+.upper_footer img {
+    width: 5vw;
+    margin: 5% 90% 0 0;
+}
+
+.lower_footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 2%;
+    padding: 0 3%;
+}
+
+.lower_footer a {
+    text-align: center;
+    width: 40%;
+}
+
+.lower_footer p {
+    width: 30%;
+    text-align: center;
+}
+
+/* -------------------- footer ------------------- */
+
+/* ====================== top ===================================== */
+
+.about_title h2 {
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.about_title div {
+    margin: 5% 5%;
+    border-top: 1px dotted #222;
+    border-bottom: 1px dotted #222;
+    padding: 3% 0%;
+}
+
+.about_title p {
+    margin: 0 5%;
+    line-height: 1.9rem;
+    font-size: 1rem;
+}
+
+.about_li h3 {
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 10% 0%;
+}
+
+.about_li dl {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5% 0% 10% 15%;
+}
+
+.about_li dd {
+    width: 50%;
+    font-size: 1rem;
+    margin: 5% 0%;
+}
+
+.about_li dt {
+    width: 50%;
+    font-size: 1rem;
+    margin: 5% 0%;
+}
+
+.about_li li {
+    object-fit: cover;
+}
+
+.about_li figure {
+    height: 30vh;
+    background: #090;
+    margin-bottom: 10%;
+}
+
+.about_li img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ==================== about_cl ================================ */
+.account {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.account section {
+    margin: 7.5vh;
+}
+
+.account h2, h3 {
+    text-align: center;
+}
+
+.account button {
+    font-size: .9rem;
+}
+
+.account_detail{
+    margin: 0 auto;
+    width: 50%;
+}
+
+.account_detail dt {
+    display: flex;
+    align-items: center;
+    float: left;
+    clear: left;
+    text-align: start;
+}
+
+.account_detail dd {
+    text-align: end;
+}
+
+.account_detail dl div {
+    margin: 3vh auto;
+    width: 60%;
+}
+
+.address_preset {
+    width: 100%;
+}
+
+.address_preset ul {
+    margin: 5vh auto;
+}
+
+.address_preset li {
+    margin: 3vh;
+    text-align: center;
+}
+
+.address_preset form {
+    display: flex;
+    justify-content: center;
+}
+
+.address_preset button {
+    position: relative;
+    border: none;
+    background: none;
+    padding: 2% 5%;
+}
+
+.address_preset button::after {
+    position: absolute;
+    left: 10%;
+    content: '';
+    width: 80%;
+    height: 1px;
+    background: #333;
+    bottom: -1px;               /*アンダーラインがaタグの下端から現れる*/
+    transform: scale(0, 1);     /*アンダーラインの縮尺比率。ホバー前はx方向に0*/
+    transform-origin: left top; /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の左端*/
+    transition: transform .75s; /*変形の時間*/
+}
+    
+.address_preset button:hover::after {
+    transform: scale(1, 1);     /*ホバー後、x軸方向に1（相対値）伸長*/
+}
+
+.address_button {
+    margin: 7.5vh;
+    width: 100%;
+}
+
+.address_button form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.address_button button {
+    position: relative;
+    border: none;
+    background: none;
+    padding: 2% 5%;
+}
+.address_button button::after {
+    position: absolute;
+    left: 10%;
+    content: '';
+    width: 80%;
+    height: 1px;
+    background: #333;
+    bottom: -1px;               /*アンダーラインがaタグの下端から現れる*/
+    transform: scale(0, 1);     /*アンダーラインの縮尺比率。ホバー前はx方向に0*/
+    transform-origin: left top; /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の左端*/
+    transition: transform .75s; /*変形の時間*/
+}
+    
+.address_button button:hover::after {
+    transform: scale(1, 1);     /*ホバー後、x軸方向に1（相対値）伸長*/
+}
+
+/* ==================== account ================================ */
+
+
+/* ====================== cart ===================================== */
+
+.item_detail {
+    display: flex;
+}
+
+.item_detail>div {
+    width: 50%;
+}
+
+.item_detail>section {
+    width: 50%;
+}
+
+.item_photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item_photo figure {
+    width: 90%;
+}
+
+.item_photo ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vh;
+}
+
+.item_photo li {
+    margin: 1.5vh 0;
+    width: 15%;
+}
+
+/* -------------------- item_photo ------------------------------- */
+
+.item_detail_area {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.item_detail_area h2 {
+    font-size: 2rem;
+}
+
+.item_detail_price {
+    font-size: 1.5rem;
+    margin-bottom: 2.75vh;
+}
+
+.item_detail_price span {
+    font-size: 1rem;
+}
+
+.item_detail_color {
+    margin-bottom: 2.75vh;
+}
+
+.item_detail_color p {
+    margin-bottom: 1vh;
+}
+
+.item_detail_color_image {
+    display: flex;
+}
+
+.item_detail_color_image div {
+    margin-right: .5vw;
+    height: 1.75vw;
+    width: 1.75vw;
+}
+
+.item_detail_quantity {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.75vh;
+    height: 5vh;
+}
+
+.item_detail_quantity p {
+    margin-right: 2%;
+}
+
+.item_detail_quantity_btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 20%;
+}
+
+.item_detail_quantity_btns input {
+    cursor: pointer;
+    width: 40%;
+    border-top: none;
+    border-bottom: none;
+    border: .5px solid #ddd;
+}
+
+.item_detail_quantity_btns button {
+    cursor: pointer;
+    width: 30%;
+    border: none;
+}
+
+.item_detail_in {
+    margin-bottom: 2.75vh;
+    height: 7.5vh;
+    width: 100%;
+    background: #222;
+    color: #eee;
+    font-size: 1.5rem;
+    border-radius: .5%;
+}
+
+.item_detail_more {
+    margin-bottom: 2.75vh;
+}
+
+.item_detail_more dt {
+    display: flex;
+    align-items: center;
+    float: left;
+    clear: left;
+    height: 4vh;
+    width: 20%;
+}
+
+.item_detail_more dd {
+    display: flex;
+    align-items: center;
+    height: 4vh;
+}
+
+/* -------------------- item_detail ------------------------------- */
+
+
+/* =================== item_detail ================================ */
+
+.breadcrumbs ol {
+    display: flex;
+    align-items: center;
+    margin: 2.5% 0 5% 3vw;
+}
+
+.breadcrumbs li {
+    font-size: 1rem;
+}
+
+.breadcrumbs li:nth-child(2n+1) {
+    padding: 1.25%;
+}
+
+.list_medium {
+    padding: 0;
+}
+
+/*--------------------- breadcrumbs --------------------------------- */
+
+.lineup_name ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 10vh;
+}
+
+.lineup_name li {
+    font-size: 2rem;
+}
+
+.lineup_name div {
+    height: 7.5vw;
+    width: 7.5vw;
+    border-radius: 100%;
+    background: #859;
+}
+
+/*--------------------- items_list --------------------------------- */
+
+.lineup_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.lineup_list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
+    width: 24%;
+}
+
+
+/* 遷移用仮置き */
+.lineup_list a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lineup_list figure {
+    height: 12.5vw;
+    width: 12.5vw;
+    border-radius: 5%;
+    margin-bottom: 10%;
+}
+
+/* ====================== item_list ================================ */
+
+
+/* ====================== news ================================ */
+.title_orderDetail {
+    display: flex;
+    align-items: center;
+}
+
+.title_orderDetail h2 {
+    font-size: 1.5rem;
+    margin: 10% 5%;
+    width: 50%;
+}
+
+.title_orderDetail figure {
+    width: 15vw;
+    margin: 3% 15%;
+}
+
+.orderList img {
+    height: 100%;
+}
+
+.orderDetail_delivery div {
+    margin: 0 5%;
+    border-top: 1px dotted #888;
+    border-bottom: 1px dotted #888;
+}
+
+.orderDetail_delivery li {
+    font-size: 1.1rem;
+    margin: 10% 0;
+}
+
+.orderDetail_delivery .state {
+    font-weight: 900;
+}
+
+.order_info h2 {
+    font-size: 1.5rem;
+    margin: 10% 5%;
+}
+
+.order_info .underline {
+    border-bottom: 1px dotted #888;
+    margin: 0 5%;
+}
+
+/* ====================== order_detail ================================ */
+
+.title_orderLi h2 {
+    font-size: 1.8rem;
+    margin: 10% 0%;
+    display: flex;
+    width: 50%;
+}
+
+.title_orderLi {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.selectbox {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+}
+
+.selectbox::after {
+    position: absolute;
+    right: 10%;
+    width: 5%;
+    height: 15%;
+    background-color: #535353;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    content: '';
+    pointer-events: none;
+}
+
+.selectbox select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    min-width: 10rem;
+    height: 2rem;
+    padding: .4rem 3.6rem .4rem .8rem;
+    border: 2px solid #888;
+    border-radius: 3px;
+    color: #888;
+    cursor: pointer;
+}
+
+.selectbox select:focus {
+    outline: 1px solid #888;
+}
+
+.orderList li {
+    border-top: 1px dotted #888;
+    border-bottom: 1px dotted #888;
+}
+
+.orderList figure {
+    width: 40vw;
+    height: 18vh;
+    margin: 3% 2%;
+}
+
+.orderList img {
+    height: 100%;
+}
+
+.orderList h3 {
+    font-size: 1.3rem;
+}
+
+.orderList a {
+    display: flex;
+}
+
+.orderList div {
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.orderList div p {
+    font-size: 0.8rem;
+}
+
+.orderli_end p {
+    text-align: center;
+    margin: 15% 0%;
+}
+
+
+
+
+/* ====================== order_list ================================ */
+
+
+/* ================== produnt_list ================================ */
+
+
+
+.complete section {
+    margin-bottom: 17.5vh;
+}
+
+.complete h2 {
+    text-align: center;
+}
+
+.complete button {
+    display: block;
+    margin: 7.5vh auto 0;
+    padding: 2.5%;
+    font-size: 1.2rem;
+    border: none;
+    background: none;
+}
+
+/* ---------------- complete -------------------- */
+
+.confirmation_statement {
+    margin-top: 15vh;
+    padding-bottom: 5vh;
+}
+
+/* -------------- confirmation_statement --------------------- */
+
+.complete_confirmation h2 {
+    margin-bottom: 1.5vh;
+}
+
+.complete_statement {
+    margin-bottom: 7.5vh;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* --------------- complete_order_cancel ------------------------ */
+
+.complete_order_cancel p {
+    text-align: center;
+}
+
+
+
+
+/* ================== purchase_complete ================================ */
+
+
+.delivery {
+    display: flex;
+    flex-direction: column;
+}
+
+.delivery_from {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.delivery_from section {
+    margin-top: 5vh;
+}
+
+.delivery_from input:hover {
+    color: #444;
+}
+
+.delivery_from label:hover {
+    color: #444;
+}
+
+.delivery_from label {
+    padding-left: 1vw;
+    height: 5vh;
+    width: 100%;
+    background: var(--base-color);
+}
+
+
+.delivery div {
+    border-radius: 1.5%;
+    /* border: 1px dashed #999; */
+}
+
+.delivery>div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 1vw;
+    width: 100%;
+}
+
+#store+label {
+    padding-left: 1.5vw;
+}
+
+.shipment_div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#store~label,
+#shipment~label {
+    display: flex;
+    align-items: center;
+}
+
+#store:checked+label>span {
+    height: .75vw;
+    width: .75vw;
+    border-radius: 100%;
+    border: 2px solid #555;
+    /* transition: border 1s linear; */
+    transition: all 1s linear;
+}
+
+.shipment_form {
+    display: none;
+}
+
+#shipment:checked~.shipment_form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2vh 0;
+    width: 100%;
+    background: #f5f0e0;
+    transition: all 1s ease;
+}
+
+#shipment:checked+label>span {
+    height: .75vw;
+    width: .75vw;
+    border-radius: 100%;
+    border: 2px solid #555;
+    /* transition: border 1s linear; */
+    transition: all 1s linear;
+}
+
+.shipment_form label {
+    display: flex;
+    align-items: center;
+    width: 85%;
+}
+
+#preset+label {
+    margin-bottom: .5vh;
+}
+
+#preset~.preset_form {
+    display: none;
+}
+
+#preset:checked+label>span {
+    height: .75vw;
+    width: .75vw;
+    border-radius: 100%;
+    border: 2px solid #555;
+    /* transition: border 1s linear; */
+    transition: all 1s linear;
+}
+
+#preset:checked~.preset_form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2vh 0;
+    width: 85%;
+    background: #efe4bd;
+}
+
+#home:checked+label>span {
+    height: .75vw;
+    width: .75vw;
+    border-radius: 100%;
+    border: 2px solid #555;
+    /* transition: border 1s linear; */
+    transition: all 1s linear;
+}
+
+#newly~.newly_form {
+    display: none;
+}
+
+.newly_form input {
+    padding-left: 5%;
+    width: 80%;
+    margin-bottom: 1%;
+    height: 5vh;
+    border: none;
+}
+
+#newly:checked~.newly_form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2vh 0;
+    width: 85%;
+    background: #efe4bd;
+}
+
+#newly:checked+label>span {
+    height: .75vw;
+    width: .75vw;
+    border-radius: 100%;
+    border: 2px solid #555;
+    /* transition: border 1s linear; */
+    transition: all 1s linear;
+}
+
+.payment_options {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment_options label {
+    display: flex;
+    align-items: center;
+    padding-left: 1.5vw;
+}
+
+.credit_form {
+    display: none;
+}
+
+#credit:checked~.credit_form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1vw;
+    padding: 2vh 0;
+    background: #f5f0e0;
+}
+
+#credit:checked+label>span {
+    height: .75vw;
+    width: .75vw;
+    border-radius: 100%;
+    border: 2px solid #555;
+    /* transition: border 1s linear; */
+    transition: all 1s linear;
+}
+
+#cod:checked+label>span {
+    height: .75vw;
+    width: .75vw;
+    border-radius: 100%;
+    border: 2px solid #555;
+    /* transition: border 1s linear; */
+    transition: all 1s linear;
+}
+
+.credit_form input {
+    margin: 0 auto 1%;
+    padding-left: 5%;
+    width: 85%;
+    height: 5vh;
+    background: var(--base-color);
+    border: none;
+}
+
+
+/*--------------------- delivery --------------------------------- */
+
+.order_overview h2 {
+    margin-bottom: 2%;
+}
+
+.order_overview p {
+    font-size: 1.2rem;
+}
+
+.order_overview ul {
+    margin-left: 1.5vw;
+}
+
+.overview_product {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1%;
+}
+
+.overview_product>div {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-around;
+}
+
+.overview_money {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 2%;
+}
+
+.order_overview img {
+    width: 8%;
+    border-radius: 5%;
+}
+
+
+
+/* -------------------- order_overview ------------------------ */
+
+.order_button {
+    margin: 10vh auto 0;
+    height: 4vh;
+    width: 40%;
+    background: #F7BE81;
+    color: #eee;
+    font-size: 1.4rem;
+    border: .5px solid #ddd;
+    border-radius: 2.5%;
+}
+
+
+/* ================== purchase_info ============================ */
+
+.confirmation section {
+    margin-top: 10vh;
+}
+
+.span_confirmation {
+    display: block;
+    margin-top: 5vh;
+    text-align: center;
+    font-size: 2.5rem;
+    border-bottom: 1.5px solid #333;
+}
+
+/* ------------------------ span_confirmation ---------------------------------*/
+
+.sect_confirmation p {
+    margin-top: 3vh;
+    padding-left: 1.5vw;
+    font-size: 1.5rem;
+}
+
+.sect_confirmation ul {
+    margin-top: 2vh;
+    width: 100%;
+}
+
+.sect_confirmation li {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding-left: 2.5%;
+    margin-bottom: 1.5%;
+    width: 80%;
+    height: 5.5vh;
+    font-size: 1.2rem;
+    border-bottom: .5px solid #888;
+}
+
+
+/* ------------------------ sect_confirmation ---------------------------------*/
+.confirmation button {
+    display: block;
+}
+
+/*    　　　　　　　order_overview は共通　　　　　　　　　　　 */
+
+/* ================== purchase_info_confirmation ============================ */
+
+
+/* =================== store info ================================ */
+
+
+
+
+
+
+@media screen and (max-width:480px) {
+    main {
+        max-width: 360px;
+    }
+h2{
+    font-size: 1.5rem;
+}
+    h3 {
+        font-size: 1rem;
+    }
+
+    .order_overview {
+        margin: 10% 5%;
+    }
+
+    .overview_product img {
+        width: 17.5%;
+    }
+
+
+    /* =================== order detail ================================ */
+}
+
+
+/* ================== レスポンシブ ==================== */

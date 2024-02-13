@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/claft-lether/assets/css/style.css">
+  <script src="/claft-lether/assets/js/purchase_complete.js" defer></script>
+  <script src="/claft-lether/assets/js/header.js" defer></script>
+  <title>purchase_complete</title>
+</head>
+<body>
+  
+<!--======================================header================================-->
+
+  <main class="complete">
+    <span class="span_confirmation">ご注文完了</span>
+    <section class="confirmation_statement">
+      <h2>
+        ご注文いただき、<br>
+        誠にありがとうございます
+      </h2>
+    </section>
+    <section class="complete_confirmation">
+      <h2>注文内容のご確認</h2>
+      <p class="complete_statement">
+        ご注文内容にお間違えがないかご確認ください。
+        ご注文内容は注文履歴からもご確認いただけます。
+      </p>
+      <div class="order_overview">
+        <ul>
+          <li class="overview_product">
+            <img src="../assets/img/category_clothes.png" alt="商品イメージ">
+            <div>
+              <p id="purchase_name"></p>
+              <span></span>
+            </div>
+            <div></div>
+            <div> 
+              <p id="purchase_count"></p> 
+              <p id="purchase_price"></p>
+            </div>
+          </li>
+          <li class="overview_money">
+            <h3>小計</h3>
+            <p id="purchase_sum"></p>
+          </li>
+          <li class="overview_money">
+            <h3>送料</h3>
+            <p id="purchase_postage"></p>
+          </li>
+          <li class="overview_money">
+            <h3>合計</h3>
+            <p id="purchase_sum_all"></p>
+          </li>
+        </ul>
+      </div>
+      <button type="button" id="go_top">ホームへ戻る</button>
+    </section>
+    
+
+    <section class="complete_order_cancel">
+      <h2>注文のキャンセル</h2>
+      <p>
+        ご注文のキャンセルは発送前まで可能です
+      </p>
+      <form action="#" method="GET">
+        <button type="submit">注文をキャンセル</button>
+      </form>
+    </section>
+  </main>
+
+
+
+
+
+
+
+
+<!--=============================  main  ================================-->
+
+
+      
+<div  class="upper_arrow">
+  <a href="#top">
+    <div>
+      <img src="../assets/img/upper.png" alt="">
+    </div>
+  </a>
+</div>
+
+<!--================================upper_arrow================================-->
+
+</body>
+</html>

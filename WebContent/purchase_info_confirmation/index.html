@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/claft-lether/assets/css/style.css">
+  <script src="/claft-lether/assets/js/purchase_confirmation.js" defer></script>
+  <script src="/claft-lether/assets/js/header.js" defer></script>
+  <title>purchase_info_confirmation</title>
+</head>
+<body>
+
+<!--======================================header================================-->
+
+  <main class="confirmation">
+    <span class="span_confirmation">入力情報確認</span>
+    <section class="delivery_confirmation sect_confirmation">
+      <h2>配達</h2>
+      <p>発送</p>
+      <ul id="confirmation_shipment"></ul>
+    </section>
+
+    <section class="payment_options_confirmation sect_confirmation">
+      <h2>支払方法</h2>
+      <p>クレジットカード</p>
+      <ul id="confirmation_payment"></ul>
+    </section>
+
+    <section class="order_overview">
+      <h2>ご注文概要</h2>
+      <ul>
+        <li class="overview_product">
+          <img src="../assets/img/category_clothes.png" alt="商品イメージ">
+          <div>
+            <p id="purchase_name"></p>
+            <span></span>
+          </div>
+          <div></div>
+          <div> 
+            <p id="purchase_count"></p> 
+            <p id="purchase_price"></p>
+          </div>
+        </li>
+        <li class="overview_money">
+          <h3>小計</h3>
+          <p id="purchase_sum"></p>
+        </li>
+        <li class="overview_money">
+          <h3>送料</h3>
+          <p id="purchase_postage"></p>
+        </li>
+        <li class="overview_money">
+          <h3>合計</h3>
+          <p id="purchase_sum_all"></p>
+        </li>
+      </ul>
+    </section>
+
+    <form action="#" method="GET">
+      <button type="button" class="order_button" id="order_send_button">支払う</button>
+    </form>
+  </main>
+
+
+<!--=============================  main  ================================-->
+
+
+      
+<div  class="upper_arrow">
+  <a href="#top">
+    <div>
+      <img src="../assets/img/upper.png" alt="">
+    </div>
+  </a>
+</div>
+
+<!--================================upper_arrow================================-->
+
+</body>
+</html>

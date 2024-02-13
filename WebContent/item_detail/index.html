@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/claft-lether/assets/css/style.css">
+  <script src="/claft-lether/assets/js/item_detail.js" defer></script>
+  <script src="/claft-lether/assets/js/header.js" defer></script>
+  <title>商品詳細</title>
+</head>
+
+<body>
+
+  <!-----------------------------------header------------------------------------>
+
+  <section class="breadcrumbs">
+    <ol>
+      <li>
+        <a href="../index.html">
+          トップ
+        </a>
+      </li>
+      <li class="list_medium">
+        >
+      </li>
+      <li>
+        <a href="../item_list" id="item_category_name">
+          バッグ(変更)
+        </a>
+      </li>
+      <li class="list_medium">
+        >
+      </li>
+      <li>
+        <a href="#" id="item_name_pan">
+          ハンドバッグ
+        </a>
+      </li>
+    </ol>
+  </section>
+  <!-----------------------------------breadcrumbs-------------------------------------->
+
+  <main class="item_detail">
+    <div class="item_photo">
+      <figure class="item_main"><img src="../assets/img/category_bag.png" alt="バッグサンプル(変更)" id="item_img"></figure>
+      <ul>
+        <li>
+          <figure class="item_sub"><img src="../assets/img/category_bag.png" alt=""></figure>
+        </li>
+        <li>
+          <figure class="item_sub"><img src="../assets/img/category_bag.png" alt=""></figure>
+        </li>
+        <li>
+          <figure class="item_sub"><img src="../assets/img/category_bag.png" alt=""></figure>
+        </li>
+        <li>
+          <figure class="item_sub"><img src="../assets/img/category_bag.png" alt=""></figure>
+        </li>
+        <li>
+          <figure class="item_sub"><img src="../assets/img/category_bag.png" alt=""></figure>
+        </li>
+        <li>
+          <figure class="item_sub"><img src="../assets/img/category_bag.png" alt=""></figure>
+        </li>
+      </ul>
+    </div>
+    <section>
+      <div class="item_detail_area">
+        <h2 id="item_name"></h2>
+        <p class="item_detail_price">¥<span id="item_price"></span>円<span>(税込)</span></p>
+        <!-- <div class="item_detail_color">
+          <p>カラー :&emsp;item.color</p>
+          <div class="item_detail_color_image">
+            <div class="camel"></div>
+            <div class="darkbrown"></div>
+          </div>
+        </div> -->
+        <div class="item_detail_stock">
+          <p>在庫&emsp;:&emsp;</p><span id="item_stock"></span>
+        </div>
+        <div class="item_detail_quantity">
+          <p>数量</p>
+          <div class="item_detail_quantity_btns">
+            <button type="button" id="down_btn">-</button>
+            <input type="number" name="count" id="count" min="1" max="" value="1">
+            <button type="button" id="up_btn">+</button>
+          </div>
+        </div>
+        <button type="submit" class="item_detail_in" id="item_cart">購入する</button>
+        <div class="item_detail_more">
+          <dl>
+            <dt>サイズ</dt>
+            <dd>縦 :&emsp;<span id="item_height"></span>,&emsp;&emsp;横 :&emsp;<span id="item_width"></span></dd>
+            <dt>重さ</dt>
+            <dd id="item_weight"></dd>
+            <dt>素材</dt>
+            <dd id="item_material"></dd>
+          </dl>
+        </div>
+        <p id="item_description"></p>
+      </div>
+    </section>
+  </main>
+
+
+
+
+
+
+
+
+
+  <section class="upper_arrow">
+    <a href="#top">
+      <div>
+        <img src="../assets/img/upper.png" alt="">
+      </div>
+    </a>
+  </section>
+
+  <!-----------------------------------upper_arrow-------------------------------------->
+
+  <!-----------------------------------footer-------------------------------------->
+
+
+</body>
+
+</html>

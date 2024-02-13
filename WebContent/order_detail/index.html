@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="/claft-lether/assets/js/header.js" defer></script>
+  <script src="/claft-lether/assets/js/order_datail.js" defer></script>
+  <title>order_datail</title>
+</head>
+
+<body>
+  <main>
+    <section class="title_orderDetail">
+      <h2>本日到着予定</h2>
+      <figure>
+        <img src="../assets/img/category_wallet.png" alt="wallet">
+      </figure>
+    </section>
+
+    <ul class="orderDetail_delivery">
+      <div>
+        <li class="del">発送準備中</li>
+        <li class="del">発送済み</li>
+        <li class="del">到着</li>
+      </div>
+    </ul>
+    <section class="order_info">
+      <h2>注文情報</h2>
+      <p class="purchase_date">ご購入日 : <span id="order_purchase_date"></span></p>
+      <div class="order_overview">
+        <ul>
+          <li class="overview_product">
+            <img src="../assets/img/category_clothes.png" alt="商品イメージ">
+            <div>
+              <p id="order_item_name"></p>
+              <span></span>
+            </div>
+            <div></div>
+            <div>
+              <p id="order_item_count"></p>
+              <p id="order_item_price"></p>
+            </div>
+          </li>
+          <!-- <li class="overview_product">
+            <img src="../assets/img/category_belt.png" alt="商品イメージ">
+            <div>
+              <p>革川</p>
+              <span></span>
+            </div>
+            <div></div>
+            <div>
+              <p>2</p>
+              <p>2000</p>
+            </div>
+          </li> -->
+          <li class="overview_money">
+            <h3>小計</h3>
+            <p id="order_sum">sum</p>
+          </li>
+          <li class="overview_money">
+            <h3>送料</h3>
+            <p id="order_postage">postage</p>
+          </li>
+          <li class="overview_money">
+            <h3>合計</h3>
+            <p id="order_all_sum">sum + postage</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="inquiry">
+      <h2>お問い合わせ</h2>
+      <label class="selectbox-2">
+        <select>
+          <option>修繕依頼</option>
+          <option>リメイク</option>
+          <option>回収</option>
+        </select>
+      </label>
+      <h2>商品の状態</h2>
+      <form action="#">
+        <textarea name="order_sentence" id="order_sentence" cols="30" rows="10"></textarea>
+        <!-- <input type="file"> -->
+        <div class="request_btn">
+          <button class="arrow-button" type="submit">依頼する</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+
+  <!---------------------------------- main -------------------------------------->
+
+  <section class="upper_arrow">
+    <a href="#top">
+      <div>
+        <img src="../assets/img/upper.png" alt="">
+      </div>
+    </a>
+  </section>
+
+  <!-----------------------------------upper_arrow-------------------------------------->
+
+
+</body>
+
+</html>
